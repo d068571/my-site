@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Site</title>
+  <style>
+    :root {
+      --bg: #faf9f6;
+      --text: #1d1d1f;
+      --muted: #6b6b70;
+      --accent: #2f6fde;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141416;
+        --text: #ececee;
+        --muted: #9a9aa0;
+        --accent: #7aa7ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      color: var(--text);
+      font: 18px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+      padding: 24px 16px;
+    }
+    main { max-width: 36rem; }
+    h1 { font-size: 2.4rem; line-height: 1.15; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
+    p { margin: 0 0 1rem; color: var(--muted); }
+    a { color: var(--accent); }
+    footer { margin-top: 2.5rem; font-size: 0.85rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hello, world.</h1>
+    <p>This site is live on GitHub Pages. Edit <code>index.html</code> in the repo and push to update it.</p>
+    <footer>Hosted on <a href="https://pages.github.com/">GitHub Pages</a></footer>
+  </main>
+</body>
+</html>
